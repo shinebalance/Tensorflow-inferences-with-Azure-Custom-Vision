@@ -1,0 +1,11 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# user-difine
+sample.jpg
+worklog.md
+*/worklog.md
+_test_*.py
+*.tflite
