@@ -6,7 +6,6 @@
 # How to run
 ## Training on ACS(Azure Custom Vision) and export tensorflow model
 * based on [Quickstart: How to build a classifier with Custom Vision](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier)
-* [my sample](exported_savedmodel)
 
 ## run inference on laptop (with Tensorflow exported model)
 * [With sample.jpg](tf_inference_from_localjpg.py)
