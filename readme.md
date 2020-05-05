@@ -1,10 +1,10 @@
 # Tensorflow inferences with Azure Custom Vision
-* prototyping image recognition inference with Azure Custom Vision (ACS) and Tensorflow
-  * ACS... because very easy to training, and can export model-file outside of cloud.
+* prototype inference for image recognition  using Azure Custom Vision (ACS) and Tensorflow
+  * ACS... because it is very easy to train, and export model-file outside of cloud.
   * Tensorflow... Including Tensorflow lite (to run on an Edge)
 
 # How to run
-## Training on ACS(Azure Custom Vision) and export tensorflow model
+## Train on ACS(Azure Custom Vision) and export tensorflow model
 * based on [Quickstart: How to build a classifier with Custom Vision](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier)
 
 ## run inference on laptop (with Tensorflow exported model)
@@ -13,7 +13,7 @@
 * based on [Tutorial: Run TensorFlow model in Python](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/export-model-python)
 * using "TensorFlow" format.
 
-## convert model on laptop (with Tensorflow)
+## convert model on laptop (with Tensorflow SavedModel)
 * [convert_from_savedmodel.py](convert_from_savedmodel.py)
 * using "SavedModel" format.
 
@@ -46,11 +46,11 @@ import tflite_runtime.interpreter as tflite  # on Edge
 - [ ] run inference codes with Coral TPU  
 - [ ] more... ?  
 ## if possible
-- [ ] try again with tflitemodel from ACS directory (I tested onece, but failed)  
+- [ ] try again with tflitemodel from ACS directory (I tested once but failed)  
 - [ ] record inference time  
 - [ ] converting [tutorial code](tutorial_videocapture.py) based on tf2.0  
 ## motivation
-* I want to learn
+* To learn
   * inference engine with Tensorflow lite
   * how edge AI run
   * how efficient is Coral Edge TPU
